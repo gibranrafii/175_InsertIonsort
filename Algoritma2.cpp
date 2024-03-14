@@ -63,7 +63,7 @@ void display() {											//procedure Display
 
 int main()
 {	
-	input();				
-	insertionsort();		
-	display();				
+	input();				//memanggil Input
+	insertionsort();		//memanggil insertionsort
+	display();				//memanggil display
 }
