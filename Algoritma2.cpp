@@ -42,26 +42,28 @@ void insertionsort() {						//procedure Insertionsort
 		}
 		arr[j + 1] = temp;					//5. simpan nilai temp ke dalam arr[j+1]
 
-		cout << "\nPass" << 1 << ": ";		//output ke layar
+		cout << "\nPass" << i << ": ";		//output ke layar
 		for (int k = 0; k < n; k++) {		//looping nilai k dimulai dari 0 hingga n-1
 			cout << arr[k] << " ";			//output ke layar
 		}
 	}
 }
 
-void display() {
-	cout << endl;
-	cout << "=================================" << endl;
+void display() {											//procedure Display
+	cout << endl;											//output baris kosong
+	cout << "=================================" << endl;	//output ke layar
 	cout << "Element Array yang telah tersusun" << endl;
 	cout << "=================================" << endl;
 
-	for (int j = 0; j < n; j++) {
-		cout << arr[j] << endl;
+	for (int j = 0; j < n; j++) {			//looping dengan j dimulai dari 0 hingga n-1
+		cout << arr[j] << endl;				//output ke layar
 	}
-	cout << endl;
+	cout << endl;							//output baris kosong
 }
 
 int main()
-{
-	
+{	
+	input();				
+	insertionsort();		
+	display();				
 }
